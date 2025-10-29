@@ -1,5 +1,7 @@
 object DPK01_impl_3 {
   def revert(s: String): String =
-    if s.isEmpty then ""
-    else s.charAt(s.length) + revert(s.tail)
+    val arr = new Array[Char](s.length)
+    for i <- 0 until s.length do
+      arr(i) = s.charAt(s.length - 1 - i)
+    new String(arr)
 }
