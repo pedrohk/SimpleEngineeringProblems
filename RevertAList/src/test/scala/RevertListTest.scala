@@ -28,5 +28,13 @@ class RevertListTest extends AnyFunSuite {
     assert(DPK01_impl_6.revert(input) == expected)
   }
 
+  test("DPK01_impl_7") {
+    assert(DPK01_impl_7.revert(input) == expected)
+  }
+
+  test("DPK01_impl_8") {
+    assert(DPK01_impl_8.revert(input) == expected)
+  }
+
 
 }
