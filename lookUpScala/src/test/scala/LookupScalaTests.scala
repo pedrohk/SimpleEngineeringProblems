@@ -7,5 +7,7 @@ class LookupTests extends AnyFunSuite {
     assert(DPK01_impl_2.lookup(1) == "John")
     assert(DPK01_impl_3.lookup(1) == "John")
     assert(DPK01_impl_4.lookup(1) == "John")
+    assert(DPK01_impl_5.lookup(1) == "John")
+    assert(DPK01_impl_6.lookup(1) == "John")
   }
 }
