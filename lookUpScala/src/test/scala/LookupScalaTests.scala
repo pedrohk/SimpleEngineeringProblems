@@ -11,5 +11,7 @@ class LookupScalaTests extends AnyFunSuite {
     assert(DPK01_impl_6.lookup(1) == "John")
     assert(DPK01_impl_7.lookup(2) == "Alice")
     assert(DPK01_impl_8.lookup(3) == "Bob")
+    assert(DPK01_impl_9.lookup(2) == "Alice")
+    assert(DPK01_impl_10.lookup(3) == "Bob")
   }
 }
