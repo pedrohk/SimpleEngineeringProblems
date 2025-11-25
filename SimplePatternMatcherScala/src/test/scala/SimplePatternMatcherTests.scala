@@ -12,7 +12,9 @@ class SimplePatternMatcherTests extends AnyFunSuite {
 
   val impls = Seq(
     DPK01_impl_1.pattern_matcher,
-    DPK01_impl_2.pattern_matcher
+    DPK01_impl_2.pattern_matcher,
+    DPK01_impl_3.pattern_matcher,
+    DPK01_impl_4.pattern_matcher
   )
 
   test("all implementations return correct result") {
