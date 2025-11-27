@@ -16,7 +16,9 @@ class SimplePatternMatcherTests extends AnyFunSuite {
     DPK01_impl_3.pattern_matcher,
     DPK01_impl_4.pattern_matcher,
     DPK01_impl_5.pattern_matcher,
-    DPK01_impl_6.pattern_matcher
+    DPK01_impl_6.pattern_matcher,
+    DPK01_impl_7.pattern_matcher,
+    DPK01_impl_8.pattern_matcher
   )
 
   test("all implementations return correct result") {
