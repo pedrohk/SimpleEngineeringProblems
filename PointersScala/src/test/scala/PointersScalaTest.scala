@@ -3,7 +3,8 @@ import org.scalatest.funsuite.AnyFunSuite
 class PointersScalaTest extends AnyFunSuite {
 
   val impls = Seq(
-    ("Impl1",  DPK01_Impl_1)
+    ("Impl1",  DPK01_Impl_1),
+    ("Impl2",  DPK01_Impl_2),
   )
 
 
