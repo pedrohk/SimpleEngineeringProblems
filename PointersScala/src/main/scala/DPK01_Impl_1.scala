@@ -14,8 +14,25 @@ object DPK01_Impl_1 {
     "Ringo" -> 0
   )
 
-  def getPower(name: String): Int = {
-    power(name)
+  def play(a: String, b: String): String = {
+    val result = mostPowerful(a, b)
+
+    if (result == a && result != "draw") {
+      leaderboard = leaderboard.updated(a, leaderboard(a) + 10)
+      leaderboard = leaderboard.updated(b, leaderboard(b) - 5)
+    } else if (result == b && result != "draw") {
+      leaderboard = leaderboard.updated(b, leaderboard(b) + 10)
+      leaderboard = leaderboard.updated(a, leaderboard(a) - 5)
+    } else {
+      if (a == b) {
+        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
+      } else {
+        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
+        leaderboard = leaderboard.updated(b, leaderboard(b) + 5)
+      }
+    }
+
+    result
   }
 
   def mostPowerful(a: String, b: String): String = {
@@ -31,24 +48,7 @@ object DPK01_Impl_1 {
     }
   }
 
-  def play(a: String, b: String): String = {
-    val result = mostPowerful(a, b)
-
-    if (result == a && result != "draw") {
-      leaderboard = leaderboard.updated(a, leaderboard(a) + 10)
-      leaderboard = leaderboard.updated(b, leaderboard(b) - 5)
-    } else if (result == b && result != "draw") {
-      leaderboard = leaderboard.updated(b, leaderboard(b) + 10)
-      leaderboard = leaderboard.updated(a, leaderboard(a) - 5)
-    } else {
-      if (a == b) {        
-        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
-      } else {        
-        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
-        leaderboard = leaderboard.updated(b, leaderboard(b) + 5)
-      }
-    }
-
-    result
+  def getPower(name: String): Int = {
+    power(name)
   }
 }
