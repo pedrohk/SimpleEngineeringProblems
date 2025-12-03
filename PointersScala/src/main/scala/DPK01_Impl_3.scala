@@ -1,6 +1,7 @@
 object DPK01_Impl_3 {
-  val names = Array("John", "Paul", "George", "Ringo")
-  val values = Array(100, 90, 80, 70)
+
+  private val names = Array("John", "Paul", "George", "Ringo")
+  private val values = Array(100, 90, 80, 70)
 
   var leaderboard = Map("John" -> 0, "Paul" -> 0, "George" -> 0, "Ringo" -> 0)
 
