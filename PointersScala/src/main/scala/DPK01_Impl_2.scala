@@ -13,6 +13,8 @@ object DPK01_Impl_2 {
       case r if r == b =>
         leaderboard = leaderboard.updated(b, leaderboard(b) + 10)
         leaderboard = leaderboard.updated(a, leaderboard(a) - 5)
+      case r if r == "draw" && a == b =>
+        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
       case _ =>
         leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
         leaderboard = leaderboard.updated(b, leaderboard(b) + 5)

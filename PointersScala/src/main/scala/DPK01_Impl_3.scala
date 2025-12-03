@@ -15,8 +15,12 @@ object DPK01_Impl_3 {
       leaderboard = leaderboard.updated(b, leaderboard(b) + 10)
       leaderboard = leaderboard.updated(a, leaderboard(a) - 5)
     } else {
-      leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
-      leaderboard = leaderboard.updated(b, leaderboard(b) + 5)
+      if (a == b) {
+        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
+      } else {
+        leaderboard = leaderboard.updated(a, leaderboard(a) + 5)
+        leaderboard = leaderboard.updated(b, leaderboard(b) + 5)
+      }
     }
 
     r
