@@ -5,7 +5,8 @@ class PointersScalaTest extends AnyFunSuite {
   val impls = Seq(
     ("Impl1",  DPK01_Impl_1),
     ("Impl2",  DPK01_Impl_2),
-    ("Impl3",  DPK01_Impl_3)
+    ("Impl3",  DPK01_Impl_3),
+    ("Impl4",  DPK01_Impl_4)
   )
 
 
