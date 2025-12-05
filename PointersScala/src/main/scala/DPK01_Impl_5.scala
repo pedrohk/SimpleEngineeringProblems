@@ -1,4 +1,5 @@
 object DPK01_Impl_5 {
+
   val people = Array("John", "Paul", "George", "Ringo")
   val powerVals = Array(100, 90, 80, 70)
 
