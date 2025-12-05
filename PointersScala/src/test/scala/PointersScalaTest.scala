@@ -1,13 +1,21 @@
 import org.scalatest.funsuite.AnyFunSuite
 
+import scala.language.reflectiveCalls
+
 class PointersScalaTest extends AnyFunSuite {
 
-  val impls = Seq(
-    ("Impl1",  DPK01_Impl_1),
-    ("Impl2",  DPK01_Impl_2),
-    ("Impl3",  DPK01_Impl_3),
-    ("Impl4",  DPK01_Impl_4),
-    ("Impl5",  DPK01_Impl_5)
+  type Impl = {
+    def getPower(name: String): Int
+    def mostPowerful(a: String, b: String): String
+    def play(a: String, b: String): String
+  }
+
+  val impls: Seq[(String, Impl)] = Seq(
+    ("Impl1", DPK01_Impl_1),
+    ("Impl2", DPK01_Impl_2),
+    ("Impl3", DPK01_Impl_3),
+    ("Impl4", DPK01_Impl_4),
+    ("Impl5", DPK01_Impl_5)
   )
 
 
@@ -26,10 +34,10 @@ class PointersScalaTest extends AnyFunSuite {
 
   test("getPower should return correct values") {
     impls.foreach { case (name, impl) =>
-      assert(impl.getPower("John") == 100,  s"$name failed for John")
-      assert(impl.getPower("Paul") == 90,   s"$name failed for Paul")
+      assert(impl.getPower("John") == 100, s"$name failed for John")
+      assert(impl.getPower("Paul") == 90, s"$name failed for Paul")
       assert(impl.getPower("George") == 80, s"$name failed for George")
-      assert(impl.getPower("Ringo") == 70,  s"$name failed for Ringo")
+      assert(impl.getPower("Ringo") == 70, s"$name failed for Ringo")
     }
   }
 
