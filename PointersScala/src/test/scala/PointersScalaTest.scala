@@ -19,7 +19,8 @@ class PointersScalaTest extends AnyFunSuite {
     ("Impl6", DPK01_Impl_6),
     ("Impl7", DPK01_Impl_7),
     ("Impl8", DPK01_Impl_8),
-    ("Impl9", DPK01_Impl_9)
+    ("Impl9", DPK01_Impl_9),
+    ("Impl10", DPK01_Impl_10)
   )
 
 
