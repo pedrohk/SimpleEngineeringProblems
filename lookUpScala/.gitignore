@@ -8,7 +8,6 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
-.idea/*
 *.iws
 *.iml
 *.ipr
@@ -46,7 +45,3 @@ build/
 
 ### Scala ###
 .bsp/
-/SimplePatternMatcherScala/.idea
-/lookUpScala/.idea
-/PointersScala/.idea/codeStyles
-/PointersScala/.idea
