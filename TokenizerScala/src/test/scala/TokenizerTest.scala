@@ -23,4 +23,12 @@ class TokenizerTest extends AnyFunSuite {
     assert(DPK01_impl_4.tokenize(input2, " ").toList == expected)
   }
 
+  test("tokenize5") {
+    assert(DPK01_impl_5.tokenize(input2, " ") == expected)
+  }
+
+  test("tokenize6") {
+    assert(DPK01_impl_6.tokenize(input2, " ") == expected)
+  }
+
 }
