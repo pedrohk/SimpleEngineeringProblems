@@ -35,4 +35,8 @@ class TokenizerTest extends AnyFunSuite {
     assert(DPK01_impl_7.tokenize(input2, " ") == expected)
   }
 
+  test("tokenize8") {
+    assert(DPK01_impl_8.tokenize(input2, " ") == expected)
+  }
+
 }
