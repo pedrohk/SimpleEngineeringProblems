@@ -1,0 +1,40 @@
+import org.scalatest.funsuite.AnyFunSuite
+
+class GroupByTest extends AnyFunSuite {
+  val nums = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+  val strs = List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
+
+  val expectedNums = List(
+    List(1, 2, 3),
+    List(4, 5, 6),
+    List(7, 8, 9),
+    List(10)
+  )
+
+  val expectedStrs = List(
+    List("a", "b", "c"),
+    List("d", "e", "f"),
+    List("g", "h", "i"),
+    List("j")
+  )
+
+  val implementations = List(
+    DPK01_impl_01.groupByN[Int] _,
+  )
+
+  test("All implementations group integers correctly") {
+    implementations.foreach { f =>
+      assert(f(nums, 3) == expectedNums)
+    }
+  }
+
+  test("All implementations group strings correctly") {
+    val stringImpls = List(
+      DPK01_impl_01.groupByN[String] _,
+    )
+
+    stringImpls.foreach { f =>
+      assert(f(strs, 3) == expectedStrs)
+    }
+  }
+}
