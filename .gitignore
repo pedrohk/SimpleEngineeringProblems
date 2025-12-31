@@ -48,5 +48,6 @@ build/
 .bsp/
 /SimplePatternMatcherScala/.idea
 /lookUpScala/.idea
-/PointersScala/.idea/codeStyles
 /PointersScala/.idea
+groupByScala/.idea
+.gitignore.bak
