@@ -19,12 +19,12 @@ class GroupByTest extends AnyFunSuite {
   )
 
   val implementations = List(
-    DPK01_impl_01.groupByN[Int],
-    DPK01_impl_02.groupByN[Int],
-    DPK01_impl_03.groupByN[Int],
-    DPK01_impl_04.groupByN[Int],
-    DPK01_impl_05.groupByN[Int],
-    DPK01_impl_06.groupByN[Int]
+    DPK07_impl_01.groupByN[Int],
+    DPK07_impl_02.groupByN[Int],
+    DPK07_impl_03.groupByN[Int],
+    DPK07_impl_04.groupByN[Int],
+    DPK07_impl_05.groupByN[Int],
+    DPK07_impl_06.groupByN[Int]
   )
 
   test("All implementations group integers correctly") {
@@ -35,12 +35,12 @@ class GroupByTest extends AnyFunSuite {
 
   test("All implementations group strings correctly") {
     val stringImpls = List(
-      DPK01_impl_01.groupByN[String],
-      DPK01_impl_02.groupByN[String],
-      DPK01_impl_03.groupByN[String],
-      DPK01_impl_04.groupByN[String],
-      DPK01_impl_05.groupByN[String],
-      DPK01_impl_06.groupByN[String]
+      DPK07_impl_01.groupByN[String],
+      DPK07_impl_02.groupByN[String],
+      DPK07_impl_03.groupByN[String],
+      DPK07_impl_04.groupByN[String],
+      DPK07_impl_05.groupByN[String],
+      DPK07_impl_06.groupByN[String]
     )
 
     stringImpls.foreach { f =>

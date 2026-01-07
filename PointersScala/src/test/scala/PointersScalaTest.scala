@@ -11,16 +11,16 @@ class PointersScalaTest extends AnyFunSuite {
   }
 
   val impls: Seq[(String, Impl)] = Seq(
-    ("Impl1", DPK01_Impl_1),
-    ("Impl2", DPK01_Impl_2),
-    ("Impl3", DPK01_Impl_3),
-    ("Impl4", DPK01_Impl_4),
-    ("Impl5", DPK01_Impl_5),
-    ("Impl6", DPK01_Impl_6),
-    ("Impl7", DPK01_Impl_7),
-    ("Impl8", DPK01_Impl_8),
-    ("Impl9", DPK01_Impl_9),
-    ("Impl10", DPK01_Impl_10)
+    ("Impl1", DPK05_Impl_1),
+    ("Impl2", DPK05_Impl_2),
+    ("Impl3", DPK05_Impl_3),
+    ("Impl4", DPK05_Impl_4),
+    ("Impl5", DPK05_Impl_5),
+    ("Impl6", DPK05_Impl_6),
+    ("Impl7", DPK05_Impl_7),
+    ("Impl8", DPK05_Impl_8),
+    ("Impl9", DPK05_Impl_9),
+    ("Impl10", DPK05_Impl_10)
   )
 
 

@@ -8,42 +8,42 @@ class TokenizerTest extends AnyFunSuite {
   val expected = List("Hello", "World", "How", "Are", "You")
 
   test("tokenize1") {
-    assert(DPK01_impl_1.tokenize(input1, ",") == expected)
+    assert(DPK06_impl_1.tokenize(input1, ",") == expected)
   }
 
   test("tokenize2") {
-    assert(DPK01_impl_2.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_2.tokenize(input2, " ") == expected)
   }
 
   test("tokenize3") {
-    assert(DPK01_impl_3.tokenize(input2, " ").toList == expected)
+    assert(DPK06_impl_3.tokenize(input2, " ").toList == expected)
   }
 
   test("tokenize4") {
-    assert(DPK01_impl_4.tokenize(input2, " ").toList == expected)
+    assert(DPK06_impl_4.tokenize(input2, " ").toList == expected)
   }
 
   test("tokenize5") {
-    assert(DPK01_impl_5.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_5.tokenize(input2, " ") == expected)
   }
 
   test("tokenize6") {
-    assert(DPK01_impl_6.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_6.tokenize(input2, " ") == expected)
   }
 
   test("tokenize7") {
-    assert(DPK01_impl_7.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_7.tokenize(input2, " ") == expected)
   }
 
   test("tokenize8") {
-    assert(DPK01_impl_8.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_8.tokenize(input2, " ") == expected)
   }
 
   test("tokenize9") {
-    assert(DPK01_impl_9.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_9.tokenize(input2, " ") == expected)
   }
 
   test("tokenize10") {
-    assert(DPK01_impl_10.tokenize(input2, " ") == expected)
+    assert(DPK06_impl_10.tokenize(input2, " ") == expected)
   }
 }
