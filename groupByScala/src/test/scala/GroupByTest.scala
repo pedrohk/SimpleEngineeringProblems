@@ -25,7 +25,8 @@ class GroupByTest extends AnyFunSuite {
     DPK07_impl_04.groupByN[Int],
     DPK07_impl_05.groupByN[Int],
     DPK07_impl_06.groupByN[Int],
-    DPK07_impl_07.groupByN[Int]
+    DPK07_impl_07.groupByN[Int],
+    DPK07_impl_08.groupByN[Int],
   )
 
   test("All implementations group integers correctly") {
@@ -42,7 +43,8 @@ class GroupByTest extends AnyFunSuite {
       DPK07_impl_04.groupByN[String],
       DPK07_impl_05.groupByN[String],
       DPK07_impl_06.groupByN[String],
-      DPK07_impl_07.groupByN[String]
+      DPK07_impl_07.groupByN[String],
+      DPK07_impl_08.groupByN[String]
     )
 
     stringImpls.foreach { f =>
