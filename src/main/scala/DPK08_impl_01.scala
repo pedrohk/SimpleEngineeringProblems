@@ -1,4 +1,4 @@
-object DPK08_imp_01 {
+object DPK08_impl_01 {
 
   def mapList[A, B](list: List[A], f: A => B): List[B] = {
     def loop(xs: List[A], acc: List[B]): List[B] = {
