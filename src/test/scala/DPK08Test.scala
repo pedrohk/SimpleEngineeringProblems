@@ -11,6 +11,12 @@ class DPK08Test extends AnyFunSuite {
     assert(DPK08_impl_02.mapList(input, _ * 2) == expected)
     assert(DPK08_impl_03.mapList(input, _ * 2) == expected)
     assert(DPK08_impl_04.mapList(input, _ * 2) == expected)
+    assert(DPK08_impl_05.mapList(input, _ * 2) == expected)
+    
+
+
+    val arr = Array(1, 2, 3, 4, 5)
+    assert(DPK08_impl_06.mapArray(arr, _ * 2).toList == expected)
 
 
   }
