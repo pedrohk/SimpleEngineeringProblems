@@ -9,4 +9,11 @@ object DPK08_impl_04 {
     }
     buffer.toList
   }
+
+  def mapListV2[A, B](list: List[A], f: A => B): List[B] = {
+    list match {
+      case Nil => Nil
+      case h :: t => f(h) :: mapListV2(t, f)
+    }
+  }
 }

@@ -5,6 +5,6 @@ object DPK08_impl_02 {
 
   def mapListV2[A, B](list: List[A], f: A => B): List[B] = {
     if (list == Nil) Nil
-    else f(list.head) :: mapList(list.tail, f)
+    else f(list.head) :: mapListV2(list.tail, f)
   }
 }
