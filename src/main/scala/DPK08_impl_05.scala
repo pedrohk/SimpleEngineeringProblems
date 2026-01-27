@@ -2,8 +2,6 @@ import scala.reflect.ClassTag
 
 object DPK08_impl_05 {
 
-  
-  
   def mapList[A, B](list: List[A], f: A => B): List[B] = {
     var result: List[B] = Nil
     var xs = list.reverse
@@ -13,8 +11,8 @@ object DPK08_impl_05 {
     }
     result
   }
-
-  def mapListV2[A, B](list: List[A], f: A => B): List[B] = {
+  
+  def mapListV2[A, B: ClassTag](list: List[A], f: A => B): List[B] = {
     def size(xs: List[A], n: Int): Int = {
       if (xs == Nil) n else size(xs.tail, n + 1)
     }
