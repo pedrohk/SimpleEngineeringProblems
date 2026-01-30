@@ -7,4 +7,13 @@ object DPK08_impl_09 {
     }
     acc
   }
+
+  def mapListV2[A, B](list: List[A], f: A => B): List[B] = {
+    if (list == Nil) Nil
+    else {
+      val head = f(list.head)
+      val tail = mapList(list.tail, f)
+      head :: tail
+    }
+  }
 }

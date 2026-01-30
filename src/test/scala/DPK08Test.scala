@@ -23,6 +23,7 @@ class DPK08Test extends AnyFunSuite {
     assert(DPK08_impl_05.mapListV2(input, _ * 2) == expected)
     assert(DPK08_impl_07.mapListV2(input, _ * 2) == expected)
     assert(DPK08_impl_08.mapListV2(input, _ * 2) == expected)
+    assert(DPK08_impl_09.mapListV2(input, _ * 2) == expected)
     
 
 
