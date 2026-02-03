@@ -1,5 +1,5 @@
 object DPK03_impl_7 {
-      val data = List((1, "John"), (2, "Alice"), (3, "Bob"))
+    val data = List((1, "John"), (2, "Alice"), (3, "Bob"))
 
     def lookup(k: Int): String = {
       var r = ""
