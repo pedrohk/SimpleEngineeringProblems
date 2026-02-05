@@ -23,5 +23,6 @@ class DPK09Test extends AnyFunSuite {
 
   test("DPK09_impl_01") { assert(same(DPK09_impl_01.filter(input,f), expected)) }
   test("DPK09_impl_02") { assert(same(DPK09_impl_02.filter(input,f), expected)) }
+  test("DPK09_impl_03") { assert(same(DPK09_impl_03.filter(input,f), expected)) }
 
 }
