@@ -40,4 +40,8 @@ class DPK10Test extends AnyFunSuite {
   test("DPK10_impl_09") {
     assert(DPK10_impl_09.reduce(data, f, 0) == 15)
   }
+
+  test("DPK10_impl_10") {
+    assert(DPK10_impl_10.reduce(data, f, 0) == 15)
+  }
 }
