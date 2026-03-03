@@ -10,6 +10,7 @@ class DPK11Test extends AnyFunSuite {
 
   val implementations = List(
     DPK11_impl_01.replace _,
+    DPK11_impl_02.replace _,
   )
 
   test("Replace single character token") {
