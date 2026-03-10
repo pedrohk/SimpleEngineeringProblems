@@ -18,6 +18,7 @@ class DPK11Test extends AnyFunSuite {
     DPK11_impl_07.replace _,
     DPK11_impl_08.replace _,
     DPK11_impl_09.replace _,
+    DPK11_impl_10.replace _,
   )
 
   test("Replace single character token") {
