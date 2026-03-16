@@ -10,4 +10,8 @@ class DPK13Test extends AnyFunSuite {
     assert(DPK13_impl_01.fizzbuzz(10).sameElements(expected10))
   }
 
+  test("DPK13_impl_02") {
+    assert(DPK13_impl_02.fizzbuzz(10).sameElements(expected10))
+  }
+
 }
