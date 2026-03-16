@@ -59,4 +59,8 @@ class DPK12Test extends AnyFunSuite {
     assert(arraysEqual(DPK12_impl_09.bubble_sort(input), expected))
   }
 
+  test("impl_10") {
+    assert(arraysEqual(DPK12_impl_10.bubble_sort(input), expected))
+  }
+
 }
