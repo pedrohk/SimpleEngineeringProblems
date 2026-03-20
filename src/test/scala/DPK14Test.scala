@@ -11,6 +11,7 @@ class DPK14Test extends AnyFunSuite {
 
   val implementations = Array(
     DPK14_impl_01.move _,
+    DPK14_impl_02.move _,
   )
 
   test("basic movement") {
