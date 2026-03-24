@@ -17,6 +17,7 @@ class DPK14Test extends AnyFunSuite {
     DPK14_impl_05.move _,
     DPK14_impl_06.move _,
     DPK14_impl_07.move _,
+    DPK14_impl_08.move _,
   )
 
   test("basic movement") {
