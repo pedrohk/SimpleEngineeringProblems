@@ -1,4 +1,4 @@
-object DPK16_impl_01 {
+object DPK16_impl_02 {
 
   case class Position(var x: Int, var y: Int)
 
@@ -7,10 +7,8 @@ object DPK16_impl_01 {
     var moves = 0
 
     def move(size: Int): Unit = {
-      val dx = scala.util.Random.between(-1, 2)
-      val dy = scala.util.Random.between(-1, 2)
-      pos.x = (pos.x + dx + size) % size
-      pos.y = (pos.y + dy + size) % size
+      if (scala.util.Random.nextBoolean()) pos.x = (pos.x + 1) % size
+      else pos.y = (pos.y + 1) % size
       moves += 1
     }
   }
@@ -19,8 +17,8 @@ object DPK16_impl_01 {
     var step = 0
 
     def move(size: Int): Unit = {
-      pos.x = step % size
-      pos.y = step % size
+      pos.x = (step * 2) % size
+      pos.y = (step * 3) % size
       step += 1
     }
   }
@@ -36,25 +34,16 @@ object DPK16_impl_01 {
 
     def tick(): Unit = {
       exterminator.move(size)
-      val newborn = scala.collection.mutable.ListBuffer[Mosquito]()
 
       mosquitos.foreach { m =>
         if (m.alive) {
           m.move(size)
-
           if (m.pos == exterminator.pos) {
-            m.alive = false;
-            killed += 1
-          }
-
-          if (m.moves >= 5 && mosquitos.exists(o => o != m && o.pos == m.pos)) {
-            newborn += new Mosquito(Position(m.pos.x, m.pos.y))
-            m.moves = 0
+            m.alive = false; killed += 1
           }
         }
       }
 
-      mosquitos ++= newborn
       mosquitos = mosquitos.filter(_.alive)
     }
 

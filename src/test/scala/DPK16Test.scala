@@ -17,4 +17,8 @@ class DPK16Test extends AnyFunSuite {
     runGame(new DPK16_impl_01.Game)
   }
 
+  test("DPK16_impl_02") {
+    runGame(new DPK16_impl_02.Game)
+  }
+
 }
